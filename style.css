@@ -1,0 +1,97 @@
+//* ===== Common styles (sab pages ke liye) ===== */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center {
+  max-width: 700px;
+  padding: 20px;
+}
+
+h1, h2, p {
+  margin: 10px 0;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: white;
+  color: #ff0066;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: 0.3s;
+}
+.btn:hover {
+  background: #ff0066;
+  color: white;
+}
+
+/* ===== Page 1 (intro) ===== */
+.page1 {
+  background: linear-gradient(to right, #ff9a9e, #fecfef);
+}
+
+/* ===== Page 2 (animation) ===== */
+.page2 {
+  background: linear-gradient(to right, #a18cd1, #fbc2eb);
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fade 3s forwards;
+}
+@keyframes fade {
+  to { opacity: 1; }
+}
+
+/* ===== Page 3 (love letter) ===== */
+.page3 {
+  background: linear-gradient(135deg, #ffffff, #ffdde1, #ffcce0);
+  background-size: 300% 300%;
+  animation: gradientMove 6s ease infinite;
+}
+
+/* background animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.letter {
+  background: rgba(255, 255, 255, 0.35);
+  padding: 30px;
+  border-radius: 20px;
+  font-family: 'Poppins', sans-serif;
+  color: #222; /* dark so it’s readable */
+  max-width: 720px;
+  margin: 0 16px;
+}
+
+/* “I / LOVE / YOU” sexy + bold */
+.love-lines {
+  font-family: 'Great Vibes', cursive;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #b0005a;
+  line-height: 1.1;
+  text-shadow: 2px 2px 10px rgba(176, 0, 90, 0.35);
+}
+
+/* Optional photo style */
+.love-photo {
+  margin-top: 20px;
+  max-width: 300px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 20, 147, 0.5);
+}
